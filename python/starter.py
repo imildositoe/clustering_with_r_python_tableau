@@ -12,3 +12,6 @@ df = pd.DataFrame({'x': [12, 20, 28, 18, 29, 33, 24, 45, 45, 52, 51, 52, 55, 53,
 # Create and fit the model
 kmeans = KMeans(n_clusters=3).fit(df)
 
+# Find the centroids of the clustersg
+centroids = kmeans.clusters_centers_
+print(centroids)
