@@ -17,7 +17,7 @@ centroids = kmeans.cluster_centers_
 print("Centroids: ", centroids)
 
 # Get the associated cluster for each data record
-print("Associated cluster: ", kmeans.labels_)
+print("Associated cluster for each data point: ", kmeans.labels_)
 
 # Display the clusters contents and their centroids
 plt.scatter(df['x'], df['y'], c=kmeans.labels_.astype(float), s=50, alpha=0.5)
